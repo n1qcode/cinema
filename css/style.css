@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #621402;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.header {
+    padding-bottom: 60px;
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.png") no-repeat center top / cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.nav {
+    position: relative;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding-left: 57px;
+}
+
+.menu-item {
+    margin-right: 25px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.user {
+    margin-left: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.avatar {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+
+.film {
+    margin-top: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.film-title-small {
+    opacity: 0.5;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.film-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.film-description {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
+}
+
+.film-trailer {
+    margin: auto;
+}
+
+.film-details {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-icon {
+    margin-right: 14px;
+}
+
+.rating-icon {
+    margin-right: 14px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.rating-current {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.session {
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.session-date-block {
+    display: flex;
+}
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.session-date-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: background-color 0.2s;
+}
+
+.session-month {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.session-day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.session-week {
+    font-size: 19px;
+    line-height: 22px;
+}
+
+.session-date-item:hover {
+    background-color: #FE8E05;
+    color: #621402;
+}
+
+.select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: white;
+    padding: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.select-cinema {
+    width: 470px;
+}
+
+.scheme {
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    overflow-x: auto;
+}
+
+.scheme-svg {
+    max-width: 1170px;
+}
+
+.scheme path:not(.light) {
+    fill: rgba(238, 225, 225, 0.2);
+    cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(238, 225, 225, 0.5);
+}
+
+.scheme path.active,
+.scheme path.active:hover {
+    fill: #FE8E05;
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill: rgba(238, 225, 225, 0.05);
+    cursor: not-allowed;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.legend svg {
+    margin-right: 10px;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    background: #FE8E05;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
+}
+
+.m-menu {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        margin: auto;
+    }
+    .select-cinema {
+        width: 100%;
+    }
+    .m-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+        margin: auto;
+    }
+    .session {
+        flex-wrap: wrap;
+    }
+    .session-date {
+        flex-basis: 70%;
+    }
+    .session-time {
+        margin-top: 40px;
+    }
+    .session-cinema {
+        order: 3;
+        margin-top: 40px;
+    }
+    .menu-item {
+        margin-right: 20px;
+    }
+    .m-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    .menu {
+        position: absolute;
+        left: 45px;
+        top: 2px;
+        flex-direction: column;
+        padding: 0;
+        margin-left: 55px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-30%);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .m-menu {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        margin-left: 20px;
+    }
+    .menu-header {
+        color: white;
+        margin-right: 7px;
+        align-items: center;
+    }
+    .m-menu-logo {
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .film-description {
+        margin-right: 30px;
+    }
+    .film {
+        flex-direction: column;
+    }
+    .film-trailer {
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
